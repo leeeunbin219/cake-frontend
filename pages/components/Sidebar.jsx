@@ -127,7 +127,7 @@ const sidebar = css`
     padding: 50px;
     padding-top: 125px;
 
-    background: #ffeaf6;
+    background: #ec9ed6;
     list-style-type: none;
 
     transform-origin: 0% 0%;

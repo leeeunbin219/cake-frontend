@@ -69,7 +69,7 @@ const main = css`
     border-radius: 15px;
     border: none;
     font-family: "Bazzi";
-    background-color: #cd9aeb;
+    background-color: #f073cd;
     color: white;
     margin-top: 10px;
     font-size: 15px;

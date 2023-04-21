@@ -1,14 +1,13 @@
 import css from "styled-jsx/css";
 import React from "react";
 import Color_button from "./components/Color_button";
-import Image from "next/image";
 import Sidebar from "pages/components/Sidebar.jsx";
 
 export default function Useruse() {
   return (
     <div className="useruse_container">
       <Sidebar />
-      <div className="useruse_nickname_container">
+      <div className="useruse_nickname_container font">
         <label for="nickname" className="useruse_name font">
           닉네임 :{" "}
         </label>
@@ -22,6 +21,7 @@ export default function Useruse() {
       <div className="useruse_color_button">
         <Color_button />
       </div>
+      <button type="submit" className="useruse_submit_button font">만들기</button>
       <style jsx>{useruse}</style>
     </div>
   );
@@ -34,6 +34,9 @@ const useruse = css`
       format("woff");
     font-weight: normal;
     font-style: normal;
+  }
+  .font {
+    font-family: "Bazzi";
   }
   .useruse_container {
     width: 500px;
@@ -56,22 +59,30 @@ const useruse = css`
   .useruse_nickname {
     border: none;
     height: 40px;
-    width: 250px;
+    width: 200px;
     border-radius: 15px;
     text-align: center;
     font-size: 25px;
   }
   .useruse_nickname:focus {
-    border: 2px solid #ff08b9;
+    border: 2px solid #f073cd;
     outline: none;
   }
-  .font {
-    font-family: "Bazzi";
-  }
+
   .useruse_color_button {
     height: 400px;
     width: 450px;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 20px;
+  }
+  .useruse_submit_button {
+    border: none;
+    border-radius: 15px;
+    height: 35px;
+    width: 90px;
+    font-size: 20px;
+    margin-top: 120px;
+    color: white;
+    background-color: #f073cd;
   }
 `;
